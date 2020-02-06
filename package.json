@@ -2,8 +2,10 @@
   "name": "pk-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "nodemon src/index.js",
+    "start:ci": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +19,11 @@
   },
   "homepage": "https://github.com/jayblack388/pk-api#readme",
   "dependencies": {
+    "apollo-datasource-rest": "^0.7.0",
     "apollo-server": "^2.9.16",
     "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
