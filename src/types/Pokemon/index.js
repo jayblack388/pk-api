@@ -1,3 +1,6 @@
+const bulbasaur = require('./bulbasaur');
+const charmander = require('./charmander');
+const squirtle = require('./squirtle');
 const Pokemon = `
   type Pokemon {
     abilities: [Ability]
@@ -20,4 +23,4 @@ const Pokemon = `
   }
 `;
 
-module.exports = Pokemon;
+module.exports = { bulbasaur, charmander, squirtle };
